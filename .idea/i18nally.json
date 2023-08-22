@@ -1,0 +1,52 @@
+{
+  "version" : "1.2",
+  "profiles" : [ {
+    "id" : "5486e42a-14e6-4c02-8c41-7b96cdfb631a",
+    "name" : "Yii",
+    "keyNamingPattern" : "SNAKE_CASE_PATTERN",
+    "sink" : {
+      "id" : "5693aaa6-acb1-4f9f-88d0-4b7b31540cf1",
+      "type" : "namespaced",
+      "translationsDirectory" : "$PROJECT_DIR$/basic/vendor/yiisoft/yii2/messages",
+      "fileType" : "php",
+      "defaultLocale" : "af",
+      "namespaces" : [ "yii" ],
+      "outputFilenameTemplate" : "%locale%/%namespace%.php",
+      "nestingType" : "DISABLED",
+      "placeholderFormatterName" : "ICU"
+    },
+    "sources" : [ {
+      "id" : "cdde2dbb-a5b6-4a41-a886-8f6a7492c18a",
+      "type" : "php",
+      "scopeName" : "i18n Ally: PHP",
+      "scopePattern" : "file[yii2]:basic//controllers//*||file[yii2]:basic//views//*",
+      "defaultReplacementTemplate" : "Yii::t('%namespace%', '%key%', %map%)",
+      "recognizedReplacementTemplates" : [ ],
+      "skipDefaultNamespace" : false,
+      "sprintfMode" : false
+    }, {
+      "id" : "ff655ec4-bdf2-481d-b1fa-dce60a4c32af",
+      "type" : "htmlphp",
+      "scopeName" : "i18n Ally: HTML with PHP",
+      "scopePattern" : "file[yii2]:basic//views//*",
+      "prefix" : "<?=",
+      "defaultReplacementTemplate" : "Yii::t('%namespace%', '%key%', %map%)",
+      "attributeReplacementTemplate" : "",
+      "inlineTagsReplacementTemplate" : "",
+      "recognizedReplacementTemplates" : [ ],
+      "postfix" : " ?>",
+      "inlineTagNames" : [ "a", "abbr", "acronym", "b", "bdi", "bdo", "big", "br", "cite", "code", "data", "del", "dfn", "em", "i", "img", "input", "ins", "kbd", "label", "mark", "meter", "output", "progress", "q", "ruby", "s", "samp", "slot", "small", "span", "strong", "sub", "sup", "time", "u", "tt", "var", "wbr" ],
+      "translatableAttributeNames" : [ "title", "alt", "placeholder", "label", "aria-label" ],
+      "skipDefaultNamespace" : false,
+      "sprintfMode" : false
+    } ]
+  } ],
+  "ignores" : {
+    "valuesInProject" : [ "use strict" ],
+    "valuesInFile" : { },
+    "filesInProject" : [ ],
+    "unignoredFunctionNames" : [ ],
+    "unignoredFunctionArguments" : { },
+    "ignoredArrayKeys" : [ "class", "selector", "template", "middleware", "layout", "el", "component", "type", "name", "id", "key", "sql", "query", "dateFormat", "date", "condition" ]
+  }
+}
